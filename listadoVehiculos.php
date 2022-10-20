@@ -75,7 +75,7 @@
         </tr>
 
         <?php
-            //require 'vehiculos.php';
+        require 'vehiculos.php';
 
         session_start();
 
