@@ -1,5 +1,5 @@
 <?php
-    //require 'vehiculos.php';
+    require 'vehiculos.php';
     if ($_POST) {
         session_start();
 

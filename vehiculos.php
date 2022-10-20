@@ -1,6 +1,6 @@
 <?php
 
-class Vehiculos{
+class Vehiculo{
 
     public $Matricula = null;
     public $Marca = null;
