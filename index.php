@@ -7,14 +7,14 @@
 
 
     if (isset($_SESSION['arrayVehiculos']) == false) {
-        /* $vehiculo = new Vehiculo('Matricula1', 'Marca1', 'Modelo1', 'Color1', 'Revisado1');
+        $vehiculo = new Vehiculo('Matricula1', 'Marca1', 'Modelo1', 'Color1', 'N');
         array_push($vehiculos, $vehiculo);
-        $vehiculo = new Vehiculo('Matricula2', 'Marca2', 'Modelo2', 'Color2', 'Revisado2');
+        $vehiculo = new Vehiculo('Matricula2', 'Marca2', 'Modelo2', 'Color2', 'N');
         array_push($vehiculos, $vehiculo);
-        $vehiculo = new Vehiculo('Matricula3', 'Marca3', 'Modelo3', 'Color3', 'Revisado3');
+        $vehiculo = new Vehiculo('Matricula3', 'Marca3', 'Modelo3', 'Color3', 'S');
         array_push($vehiculos, $vehiculo);
 
-        $_SESSION['arrayVehiculos'] = $vehiculos; */
+        $_SESSION['arrayVehiculos'] = $vehiculos;
     }
 ?>
 <!DOCTYPE html>

@@ -95,6 +95,7 @@
             echo "<td><form action='revisarVehiculo.php' method='post'>";
             echo "<input type='hidden' name='Revisado' value='$obj->Revisado'>";
             echo "<button type='submit'>Revisar</button>";
+            echo "</form>";
             echo "<form action='modificarVehiculo.php' method='post'>";
             echo "<input type='hidden' name='Matricula' value='$obj->Matricula'>";
             echo "<input type='hidden' name='Marca' value='$obj->Marca'>";
