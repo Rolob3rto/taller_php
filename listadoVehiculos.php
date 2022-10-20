@@ -82,33 +82,39 @@
         $arrayVehiculos = $_SESSION['arrayVehiculos'];
 
         //print_r($arrayVehiculos);
+        if ($_SESSION['arrayVehiculos'] != null) {
 
-        for ($i = 0; $i < count($arrayVehiculos); $i++) {
-            $obj = $arrayVehiculos[$i];
-            
-            echo "<tr>"; 
-            echo "<td>$obj->Matricula</td>";
-            echo "<td>$obj->Marca</td>";
-            echo "<td>$obj->Modelo</td>";
-            echo "<td>$obj->Color</td>";
-            echo "<td>$obj->Revisado</td>";
-            echo "<td><form action='revisarVehiculo.php' method='post'>";
-            echo "<input type='hidden' name='Revisado' value='$obj->Revisado'>";
-            echo "<button type='submit'>Revisar</button>";
-            echo "</form>";
-            echo "<form action='modificarVehiculo.php' method='post'>";
-            echo "<input type='hidden' name='Matricula' value='$obj->Matricula'>";
-            echo "<input type='hidden' name='Marca' value='$obj->Marca'>";
-            echo "<input type='hidden' name='Modelo' value='$obj->Modelo'>";
-            echo "<input type='hidden' name='Color' value='$obj->Color'>";
-            echo "<input type='hidden' name='Revisado' value='$obj->Revisado'>";
-            echo "<button type='submit'>Editar</button>";
-            echo "</form>";
-            echo "<form action='borrarVehiculo.php' method='post'>";
-            echo "<input type='hidden' name='Matricula' value='$obj->Matricula'>";
-            echo "<button type='submit'>Borrar</button>";
-            echo "</form></td>";
-            echo "</tr>";
+            for ($i = 0; $i < count($arrayVehiculos); $i++) {
+                $obj = $arrayVehiculos[$i];
+                
+                echo "<tr>"; 
+                echo "<td>$obj->Matricula</td>";
+                echo "<td>$obj->Marca</td>";
+                echo "<td>$obj->Modelo</td>";
+                echo "<td>$obj->Color</td>";
+                echo "<td>$obj->Revisado</td>";
+                echo "<td><form action='revisarVehiculo.php' method='post'>";
+                echo "<input type='hidden' name='Matricula' value='$obj->Matricula'>";
+                echo "<input type='hidden' name='Marca' value='$obj->Marca'>";
+                echo "<input type='hidden' name='Modelo' value='$obj->Modelo'>";
+                echo "<input type='hidden' name='Color' value='$obj->Color'>";
+                echo "<input type='hidden' name='Revisado' value='$obj->Revisado'>";
+                echo "<button type='submit'>Revisar</button>";
+                echo "</form>";
+                echo "<form action='modificarVehiculo.php' method='post'>";
+                echo "<input type='hidden' name='Matricula' value='$obj->Matricula'>";
+                echo "<input type='hidden' name='Marca' value='$obj->Marca'>";
+                echo "<input type='hidden' name='Modelo' value='$obj->Modelo'>";
+                echo "<input type='hidden' name='Color' value='$obj->Color'>";
+                echo "<input type='hidden' name='Revisado' value='$obj->Revisado'>";
+                echo "<button type='submit'>Editar</button>";
+                echo "</form>";
+                echo "<form action='borrarVehiculo.php' method='post'>";
+                echo "<input type='hidden' name='Matricula' value='$obj->Matricula'>";
+                echo "<button type='submit'>Borrar</button>";
+                echo "</form></td>";
+                echo "</tr>";
+            }
         }
         ?>
     </table>
